@@ -17,60 +17,66 @@ import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import RssFeedRoundedIcon from '@mui/icons-material/RssFeedRounded';
 
 const cardData = [
-  {
-    img: 'https://picsum.photos/800/450?random=1',
-    tag: 'Engineering',
-    title: 'Revolutionizing software development with cutting-edge tools',
-    description:
-      'Our latest engineering tools are designed to streamline workflows and boost productivity. Discover how these innovations are transforming the software development landscape.',
-    authors: [
-      { name: 'Remy Sharp', avatar: '/static/images/avatar/1.jpg' },
-      { name: 'Travis Howard', avatar: '/static/images/avatar/2.jpg' },
-    ],
-  },
-  {
-    img: 'https://picsum.photos/800/450?random=2',
-    tag: 'Product',
-    title: 'Innovative product features that drive success',
-    description:
-      'Explore the key features of our latest product release that are helping businesses achieve their goals. From user-friendly interfaces to robust functionality, learn why our product stands out.',
-    authors: [{ name: 'Erica Johns', avatar: '/static/images/avatar/6.jpg' }],
-  },
-  {
-    img: 'https://picsum.photos/800/450?random=3',
-    tag: 'Design',
-    title: 'Designing for the future: trends and insights',
-    description:
-      'Stay ahead of the curve with the latest design trends and insights. Our design team shares their expertise on creating intuitive and visually stunning user experiences.',
-    authors: [{ name: 'Kate Morrison', avatar: '/static/images/avatar/7.jpg' }],
-  },
-  {
-    img: 'https://picsum.photos/800/450?random=4',
-    tag: 'Company',
-    title: "Our company's journey: milestones and achievements",
-    description:
-      "Take a look at our company's journey and the milestones we've achieved along the way. From humble beginnings to industry leader, discover our story of growth and success.",
-    authors: [{ name: 'Cindy Baker', avatar: '/static/images/avatar/3.jpg' }],
-  },
-  {
-    img: 'https://picsum.photos/800/450?random=45',
-    tag: 'Engineering',
-    title: 'Pioneering sustainable engineering solutions',
-    description:
-      "Learn about our commitment to sustainability and the innovative engineering solutions we're implementing to create a greener future. Discover the impact of our eco-friendly initiatives.",
-    authors: [
-      { name: 'Agnes Walker', avatar: '/static/images/avatar/4.jpg' },
-      { name: 'Trevor Henderson', avatar: '/static/images/avatar/5.jpg' },
-    ],
-  },
-  {
-    img: 'https://picsum.photos/800/450?random=6',
-    tag: 'Product',
-    title: 'Maximizing efficiency with our latest product updates',
-    description:
-      'Our recent product updates are designed to help you maximize efficiency and achieve more. Get a detailed overview of the new features and improvements that can elevate your workflow.',
-    authors: [{ name: 'Travis Howard', avatar: '/static/images/avatar/2.jpg' }],
-  },
+    {
+        img: 'https://picsum.photos/800/450?random=11',
+        tag: 'Gesuche',
+        title: 'Nachwuchsathlet sucht Unterstützung für Trainingslager',
+        description:
+            'Felix trainiert für die Junioren-Weltmeisterschaft im Schwimmen und sucht finanzielle Hilfe für sein Trainingslager in Spanien.',
+        authors: [
+            { name: 'Felix Huber', avatar: '/static/images/avatar/1.jpg' },
+        ],
+    },
+    {
+        img: 'https://picsum.photos/800/450?random=12',
+        tag: 'Sponsoring',
+        title: 'Tech-Unternehmen sponsert Bildungsprojekte',
+        description:
+            'SoftSys fördert IT-Bildungsinitiativen für Kinder und Jugendliche. Bewerben Sie sich mit Ihrem Projekt!',
+        authors: [
+            { name: 'SoftSys GmbH', avatar: '/static/images/avatar/2.jpg' },
+        ],
+    },
+    {
+        img: 'https://picsum.photos/800/450?random=13',
+        tag: 'Gesuche',
+        title: 'Mode-Designstudentin sucht Förderung für Kollektion',
+        description:
+            'Lena möchte ihre Abschlusskollektion auf einer internationalen Messe präsentieren und sucht einen Sponsor für Materialien und Reisekosten.',
+        authors: [
+            { name: 'Lena Schwarz', avatar: '/static/images/avatar/3.jpg' },
+        ],
+    },
+    {
+        img: 'https://picsum.photos/800/450?random=14',
+        tag: 'Sponsoring',
+        title: 'Stiftung unterstützt soziale Initiativen',
+        description:
+            'Die Aurora-Stiftung bietet finanzielle Förderung für gemeinnützige Projekte im Bereich Gleichstellung und Integration.',
+        authors: [
+            { name: 'Aurora Stiftung', avatar: '/static/images/avatar/4.jpg' },
+        ],
+    },
+    {
+        img: 'https://picsum.photos/800/450?random=15',
+        tag: 'Gesuche',
+        title: 'Kunstprojekt sucht Sponsor für öffentliche Installation',
+        description:
+            'Ein interdisziplinäres Künstlerkollektiv plant eine Lichtinstallation in der Innenstadt und benötigt Mittel für Technik und Genehmigungen.',
+        authors: [
+            { name: 'Kollektiv Lichtblick', avatar: '/static/images/avatar/5.jpg' },
+        ],
+    },
+    {
+        img: 'https://picsum.photos/800/450?random=16',
+        tag: 'Sponsoring',
+        title: 'Marketingagentur bietet Sponsoring für junge Startups',
+        description:
+            'VisionBase sucht spannende Startups, denen sie mit Know-how und finanzieller Unterstützung unter die Arme greifen kann.',
+        authors: [
+            { name: 'VisionBase Marketing', avatar: '/static/images/avatar/6.jpg' },
+        ],
+    },
 ];
 
 const SyledCard = styled(Card)(({ theme }) => ({
@@ -149,7 +155,7 @@ export function Search() {
       <OutlinedInput
         size="small"
         id="search"
-        placeholder="Search…"
+        placeholder="Suche…"
         sx={{ flexGrow: 1 }}
         startAdornment={
           <InputAdornment position="start" sx={{ color: 'text.primary' }}>
@@ -222,11 +228,29 @@ export default function MainContent() {
             overflow: 'auto',
           }}
         >
-          <Chip onClick={handleClick} size="medium" label="All categories" />
+          <Chip onClick={handleClick} size="medium" label="Alle Kategorien" />
           <Chip
             onClick={handleClick}
             size="medium"
-            label="Company"
+            label="Sport"
+            sx={{
+              backgroundColor: 'transparent',
+              border: 'none',
+            }}
+          />
+            <Chip
+                onClick={handleClick}
+                size="medium"
+                label="Freizeit"
+                sx={{
+                    backgroundColor: 'transparent',
+                    border: 'none',
+                }}
+            />
+          <Chip
+            onClick={handleClick}
+            size="medium"
+            label="Ballsaison 2025"
             sx={{
               backgroundColor: 'transparent',
               border: 'none',
@@ -235,7 +259,7 @@ export default function MainContent() {
           <Chip
             onClick={handleClick}
             size="medium"
-            label="Product"
+            label="Startups"
             sx={{
               backgroundColor: 'transparent',
               border: 'none',
@@ -244,16 +268,7 @@ export default function MainContent() {
           <Chip
             onClick={handleClick}
             size="medium"
-            label="Design"
-            sx={{
-              backgroundColor: 'transparent',
-              border: 'none',
-            }}
-          />
-          <Chip
-            onClick={handleClick}
-            size="medium"
-            label="Engineering"
+            label="Tech"
             sx={{
               backgroundColor: 'transparent',
               border: 'none',

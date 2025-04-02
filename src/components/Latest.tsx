@@ -10,83 +10,74 @@ import NavigateNextRoundedIcon from '@mui/icons-material/NavigateNextRounded';
 
 const articleInfo = [
   {
-    tag: 'Engineering',
-    title: 'The future of AI in software engineering',
+    tag: 'Gesuche',
+    title: 'Junge Musikerin sucht Unterstützung für Musikstudium',
     description:
-      'Artificial intelligence is revolutionizing software engineering. Explore how AI-driven tools are enhancing development processes and improving software quality.',
-    authors: [
-      { name: 'Remy Sharp', avatar: '/static/images/avatar/1.jpg' },
-      { name: 'Travis Howard', avatar: '/static/images/avatar/2.jpg' },
-    ],
+        'Anna, eine talentierte Geigerin, sucht Sponsoren, um ihr Studium an der Musikuniversität Wien zu finanzieren.',
+    authors: [{ name: 'Anna Schneider', avatar: '/static/images/avatar/1.jpg' }],
   },
   {
-    tag: 'Product',
-    title: 'Driving growth with user-centric product design',
+    tag: 'Sponsoring',
+    title: 'Unternehmen fördert nachhaltige Startups',
     description:
-      'Our user-centric product design approach is driving significant growth. Learn about the strategies we employ to create products that resonate with users.',
-    authors: [{ name: 'Erica Johns', avatar: '/static/images/avatar/6.jpg' }],
+        'GreenTech GmbH bietet Sponsoring für innovative, nachhaltige Startups im Energiebereich an.',
+    authors: [{ name: 'GreenTech GmbH', avatar: '/static/images/avatar/2.jpg' }],
   },
   {
-    tag: 'Design',
-    title: 'Embracing minimalism in modern design',
+    tag: 'Gesuche',
+    title: 'Sportlerin benötigt Ausrüstung für Wettkampfsaison',
     description:
-      'Minimalism is a key trend in modern design. Discover how our design team incorporates minimalist principles to create clean and impactful user experiences.',
-    authors: [{ name: 'Kate Morrison', avatar: '/static/images/avatar/7.jpg' }],
+        'Lisa bereitet sich auf die Europameisterschaft vor und sucht einen Sponsor für Sportkleidung und Reisekosten.',
+    authors: [{ name: 'Lisa Bauer', avatar: '/static/images/avatar/3.jpg' }],
   },
   {
-    tag: 'Company',
-    title: 'Cultivating a culture of innovation',
+    tag: 'Sponsoring',
+    title: 'Agentur unterstützt kreative Projekte mit Finanzierung',
     description:
-      'Innovation is at the heart of our company culture. Learn about the initiatives we have in place to foster creativity and drive groundbreaking solutions.',
-    authors: [{ name: 'Cindy Baker', avatar: '/static/images/avatar/3.jpg' }],
+        'Die Kreativagentur CreateIt vergibt Sponsoring an junge Künstler:innen mit innovativen Ideen.',
+    authors: [{ name: 'CreateIt', avatar: '/static/images/avatar/4.jpg' }],
   },
   {
-    tag: 'Engineering',
-    title: 'Advancing cybersecurity with next-gen solutions',
+    tag: 'Gesuche',
+    title: 'Student sucht Finanzierung für soziales Projekt in Afrika',
     description:
-      'Our next-generation cybersecurity solutions are setting new standards in the industry. Discover how we protect our clients from evolving cyber threats.',
-    authors: [
-      { name: 'Agnes Walker', avatar: '/static/images/avatar/4.jpg' },
-      { name: 'Trevor Henderson', avatar: '/static/images/avatar/5.jpg' },
-    ],
+        'Jonas plant ein Bildungsprojekt in Tansania und benötigt finanzielle Unterstützung für Materialien und Reisekosten.',
+    authors: [{ name: 'Jonas Weber', avatar: '/static/images/avatar/5.jpg' }],
   },
   {
-    tag: 'Product',
-    title: 'Enhancing customer experience through innovation',
+    tag: 'Sponsoring',
+    title: 'Sportmarke sucht junge Talente im Radsport',
     description:
-      'Our innovative approaches are enhancing customer experience. Learn about the new features and improvements that are delighting our users.',
-    authors: [{ name: 'Travis Howard', avatar: '/static/images/avatar/2.jpg' }],
+        'CycloPro bietet Sponsoringverträge für aufstrebende Radsportler:innen mit Potenzial.',
+    authors: [{ name: 'CycloPro Sports', avatar: '/static/images/avatar/6.jpg' }],
   },
   {
-    tag: 'Engineering',
-    title: 'Pioneering sustainable engineering solutions',
+    tag: 'Gesuche',
+    title: 'Kunststudentin möchte Ausstellung realisieren',
     description:
-      "Learn about our commitment to sustainability and the innovative engineering solutions we're implementing to create a greener future. Discover the impact of our eco-friendly initiatives.",
-    authors: [
-      { name: 'Agnes Walker', avatar: '/static/images/avatar/4.jpg' },
-      { name: 'Trevor Henderson', avatar: '/static/images/avatar/5.jpg' },
-    ],
+        'Mira plant ihre erste Einzelausstellung und sucht finanzielle Hilfe für Raummiete und Druckkosten.',
+    authors: [{ name: 'Mira Koller', avatar: '/static/images/avatar/7.jpg' }],
   },
   {
-    tag: 'Product',
-    title: 'Maximizing efficiency with our latest product updates',
+    tag: 'Sponsoring',
+    title: 'Mentorenprogramm sucht förderungswürdige Tech-Talente',
     description:
-      'Our recent product updates are designed to help you maximize efficiency and achieve more. Get a detailed overview of the new features and improvements that can elevate your workflow.',
-    authors: [{ name: 'Travis Howard', avatar: '/static/images/avatar/2.jpg' }],
+        'TechBoost bietet Mentoring und finanzielle Unterstützung für Studierende im Bereich Informatik.',
+    authors: [{ name: 'TechBoost Mentoring', avatar: '/static/images/avatar/8.jpg' }],
   },
   {
-    tag: 'Design',
-    title: 'Designing for the future: trends and insights',
+    tag: 'Gesuche',
+    title: 'Schülergruppe will an Robotik-Wettbewerb teilnehmen',
     description:
-      'Stay ahead of the curve with the latest design trends and insights. Our design team shares their expertise on creating intuitive and visually stunning user experiences.',
-    authors: [{ name: 'Kate Morrison', avatar: '/static/images/avatar/7.jpg' }],
+        'Ein motiviertes Team sucht einen Sponsor für Reisekosten und Bauteile zum internationalen Robocup.',
+    authors: [{ name: 'RoboTeam Linz', avatar: '/static/images/avatar/9.jpg' }],
   },
   {
-    tag: 'Company',
-    title: "Our company's journey: milestones and achievements",
+    tag: 'Sponsoring',
+    title: 'Stiftung unterstützt soziale Projekte im Bildungsbereich',
     description:
-      "Take a look at our company's journey and the milestones we've achieved along the way. From humble beginnings to industry leader, discover our story of growth and success.",
-    authors: [{ name: 'Cindy Baker', avatar: '/static/images/avatar/3.jpg' }],
+        'Die Morgenstern-Stiftung fördert gemeinnützige Projekte zur Förderung von Chancengleichheit im Bildungssystem.',
+    authors: [{ name: 'Morgenstern-Stiftung', avatar: '/static/images/avatar/10.jpg' }],
   },
 ];
 
@@ -126,7 +117,7 @@ const TitleTypography = styled(Typography)(({ theme }) => ({
     height: '1px',
     bottom: 0,
     left: 0,
-    backgroundColor: (theme.vars || theme).palette.text.primary,
+    backgroundColor: (theme.cssVariables || theme).palette.text.primary,
     opacity: 0.3,
     transition: 'width 0.3s ease, opacity 0.3s ease',
   },

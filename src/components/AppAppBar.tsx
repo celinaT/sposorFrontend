@@ -62,23 +62,18 @@ export default function AppAppBar({
             <Sitemark />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
               <Button variant="text" color="info" size="small">
-                Features
-              </Button>
-              <Button variant="text" color="info" size="small">
-                Testimonials
-              </Button>
-              <Button variant="text" color="info" size="small">
                 Highlights
               </Button>
-              <Button variant="text" color="info" size="small">
-                Pricing
-              </Button>
               <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
-                FAQ
+                Erfolgsgeschichten
               </Button>
               <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
                 Blog
               </Button>
+              <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
+                FAQ
+              </Button>
+
             </Box>
           </Box>
           <Box
